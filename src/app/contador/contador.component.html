@@ -1,0 +1,5 @@
+<button (click)="onAddBtnClick()">Aumentar</button>
+<button (click)="onSubBtnClick()">Diminuir</button>
+
+<p [ngStyle]="{backgroundColor: contador < 0 ? 'red' : 'green'}">{{contador}}</p>
+<p *ngIf="contador > 0">O {{ contador }} é maior que 0</p>
